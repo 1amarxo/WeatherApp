@@ -1,0 +1,12 @@
+<div class="forecast-main">
+    <div class="future_card" (click)="onCardClick()">
+        <h4>{{day.date | week}}</h4>
+        <h5>{{day.day.condition.text}}</h5> 
+        <img [src]="day.day.condition.text |iconWather:1" class="icon1">
+       <h1>{{day.day.maxtemp_c}}<sup>&deg;</sup></h1>
+    </div>
+    <div *ngIf="display" >
+        <app-detail [detail]="day.day"></app-detail>
+    </div>
+    
+</div>

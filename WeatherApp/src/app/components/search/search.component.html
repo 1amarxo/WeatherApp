@@ -1,0 +1,14 @@
+<form class="row g-3 mt-4"  (submit)="onSubmitClick()">
+    <div class="col-2">
+        <label for="search" class="form-label"></label>
+    </div>
+    
+    <div class="col-8">
+        <input class="form-control" name="search" type="text" [(ngModel)]="titleCity">
+    </div>
+
+    <div class="col-2">
+        <button type="submit" class="btn btn-primary mb-3">Search</button>
+    </div>
+</form>
+

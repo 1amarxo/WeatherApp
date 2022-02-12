@@ -1,0 +1,22 @@
+
+    <div class="card">
+        <h4>{{detail.condition.text}}</h4>
+  
+        <img [src]="detail.condition.text |iconWather:1" class="icon">
+       <h1><sup></sup></h1>
+       
+       <div class="details">
+           <div class="peice">
+               <p>Wind</p>
+               <span>{{detail.maxwind_kph}}</span>
+           </div>
+           <div class="peice">
+            <p>Precip</p>
+            <span>{{detail.totalprecip_in}}</span>
+           </div>
+           <div class="peice">
+            <p>Pressure</p>
+            <span>{{detail.avghumidity}}</span>
+           </div>
+       </div>
+    </div>

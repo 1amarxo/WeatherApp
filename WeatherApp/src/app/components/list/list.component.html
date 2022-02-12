@@ -1,0 +1,18 @@
+<div class="main-container">
+    <app-search (submited)="onSearch($event)"></app-search>
+    <div class="main" *ngIf="display"  [ngStyle]="{ 'background-image': 'url(' + (current.is_day|background) + ')'}">
+        
+        <div class="container">
+            <app-current [city]="city" [current]="current"></app-current>
+
+            <div class="future" >
+                <div   *ngFor="let item of forecastDay">
+                    <app-forecast [day]="item" class="future-item"></app-forecast>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>

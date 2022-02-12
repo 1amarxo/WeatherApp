@@ -1,0 +1,85 @@
+
+    .card{
+        z-index: 100;
+        
+        height: 240px;
+        width: 300px;
+        color: seashell;
+        font-family: 'Poppins', sans-serif;
+        background-color:rgba(94, 100, 114, 0.7) ;
+        position: relative;
+        margin:0 auto;
+        margin-top: 50px;
+        margin-right: 50px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255,255,255,0.1);
+        box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: center;
+        .icon{
+            margin: 0;
+            width: 110px;
+            height: 100px;
+            
+        }
+        h4{
+            width: auto;
+            height: 50px;
+            overflow: hidden;
+            font-size:24px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            
+            margin: 0 0 0 0;
+        }
+        h1{
+            margin: 0;
+        }
+        h5{
+            
+            font-weight: bold;
+            font-size: 14px;
+            color: seashell;
+            letter-spacing: 1px;
+        }
+        .details{
+            width: 65%;
+            
+            display: grid;
+            grid-template-columns:auto auto auto;
+            margin-top: 10px;
+            .peice{
+                text-align: center;
+                font-size: 12px;
+                margin-top: 0;
+                
+                letter-spacing: 1px;
+                font-weight: 500;
+                p{
+                    padding-right: 3px;
+                    padding-left: 3px;
+                    margin-top: 0;
+                }
+                span{
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    color: seashell;
+                }
+                &:last-child{
+                    border-right: 0 ;
+                }
+            }
+            & > *{
+                border-right: 2px solid seashell;
+                
+            }
+        }
+    }

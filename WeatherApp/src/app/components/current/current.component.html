@@ -1,0 +1,24 @@
+<div class="current_day" >
+    <div class="card">
+        <h4>{{city}}</h4>
+        <h5>{{current.condition.text}}</h5> 
+        <img [src]="current.condition.text |iconWather:current.is_day" class="icon">
+       <h1>{{current.temp_c}}<sup>&deg;</sup></h1>
+       
+       <div class="details">
+           <div class="peice">
+               <p>Wind</p>
+               <span>{{current.wind_kph}} km/h</span>
+           </div>
+           <div class="peice">
+            <p>Precip</p>
+            <span>{{current.precip_mm}} mm</span>
+           </div>
+           <div class="peice">
+            <p>Pressure</p>
+            <span>{{current.pressure_mb}} mb</span>
+           </div>
+       </div>
+    </div>
+</div>
+
